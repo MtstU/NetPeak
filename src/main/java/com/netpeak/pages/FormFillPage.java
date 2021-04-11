@@ -53,14 +53,11 @@ public class FormFillPage {
     }
 
     public void uploadCVFile(String filePath) {
-        //uploadCV.click();
         uploadCV.sendKeys(filePath);
-
     }
 
     public void fileFormatError () {
         fileFormatErrorMessage.shouldHave(Condition.text("Ошибка: неверный формат файла (разрешённые форматы: doc, docx, pdf, txt, odt, rtf)."));
-        //Ошибка: неверный формат файла (разрешённые форматы: doc, docx, pdf, txt, odt, rtf).
     }
 
     public void allFieldsFilled () {
